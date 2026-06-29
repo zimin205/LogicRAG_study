@@ -37,6 +37,23 @@ LogicRAG/
     ├── checkpoints/              # 5문항 간격 중간 저장
     └── evaluation_results_musique_YYYYMMDD_HHMMSS.json  # 최종 결과
 ```
+## 공개 범위
+
+이 공개 레포지토리에는 전체 실험 환경이 아니라, `src/models/` 안의 핵심 모델 구현 파일만 포함했습니다.
+
+공개한 파일은 다음과 같습니다.
+
+```text
+src/models/
+├── base_rag.py
+├── logic_rag.py
+├── query_logic_dag.py
+├── verify_non_cyclicity.py
+├── dag_topological_rank.py
+└── dag_rank_resolver.py
+```
+
+`.env`, `config/`, `dataset/`, `cache/`, `evaluation/` 결과 파일 등은 API 키, 실험 설정, 데이터셋, 캐시 또는 로그가 포함될 수 있어 공개하지 않았습니다. 아래 폴더 구조와 실행 방법은 전체 로컬 실험 환경 기준의 설명입니다.
 
 ## 사전 준비
 
