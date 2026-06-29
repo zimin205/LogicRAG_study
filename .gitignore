@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+
+config/
+dataset/
+cache/
+evaluation/
+logs/
+outputs/
+wandb/
+checkpoints/
+
+__pycache__/
+*.pyc
+.DS_Store
